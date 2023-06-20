@@ -1,0 +1,280 @@
+/* stylelint-disable scss/operator-no-unspaced */
+/* stylelint-enable scss/operator-no-unspaced */
+/**
+ * Button component
+ * @define button
+ */
+.ecl-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font: normal normal 400 1rem/1.25rem arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+.ecl-button:hover, .ecl-button:active {
+  box-shadow: none;
+  text-decoration: none;
+}
+.ecl-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+  text-decoration: none;
+}
+.ecl-button[disabled], .ecl-button[disabled]:hover {
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.ecl-button__container {
+  align-items: center;
+  display: flex;
+}
+
+.ecl-button__icon {
+  flex-shrink: 0;
+}
+
+.ecl-button__icon--before,
+.ecl-button__icon + .ecl-button__label {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.ecl-button__icon--after,
+.ecl-button__label + .ecl-button__icon {
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+
+/**
+* Primary
+*/
+.ecl-button--primary {
+  background-color: #004494;
+  color: #fff;
+}
+.ecl-button--primary:hover, .ecl-button--primary:active {
+  background-color: #002f67;
+}
+.ecl-button--primary[disabled] {
+  background-color: rgba(0, 68, 148, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+.ecl-button--primary[disabled]:hover {
+  background-color: rgba(0, 47, 103, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/**
+* Secondary
+*/
+.ecl-button--secondary {
+  background-color: #fff;
+  border: 2px solid #004494;
+  color: #004494;
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+}
+.ecl-button--secondary:hover, .ecl-button--secondary:active {
+  border-color: #002f67;
+  color: #002f67;
+}
+.ecl-button--secondary:focus-visible {
+  box-shadow: 0 0 0 4px #004494 inset;
+  outline: 2px #fff solid;
+}
+.ecl-button--secondary[disabled] {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 68, 148, 0.5);
+  color: rgba(0, 68, 148, 0.5);
+}
+.ecl-button--secondary[disabled]:hover {
+  border-color: rgba(0, 47, 103, 0.5);
+  color: rgba(0, 47, 103, 0.5);
+}
+
+/**
+* Ghost
+*/
+.ecl-button--ghost {
+  color: #004494;
+}
+.ecl-button--ghost:hover, .ecl-button--ghost:active {
+  color: #002f67;
+}
+.ecl-button--ghost:focus-visible {
+  outline: 2px solid #004494;
+}
+.ecl-button--ghost[disabled] {
+  color: rgba(0, 68, 148, 0.5);
+}
+.ecl-button--ghost[disabled]:hover {
+  color: rgba(0, 47, 103, 0.5);
+}
+
+/**
+* Call to action
+*/
+.ecl-button--call {
+  background-color: #ffd617;
+  color: #000;
+}
+.ecl-button--call:hover, .ecl-button--call:active {
+  background-color: #f8ae21;
+  border-color: #f8ae21;
+}
+.ecl-button--call:focus-visible {
+  outline: 2px solid #000;
+}
+.ecl-button--call[disabled] {
+  background-color: rgba(255, 214, 23, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+.ecl-button--call[disabled]:hover {
+  background-color: rgba(248, 174, 33, 0.5);
+}
+
+/**
+ * File-upload component
+ * @define file-upload
+ */
+.ecl-file-upload {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  margin: 0;
+}
+.no-js .ecl-file-upload {
+  clip: initial;
+  color: #404040;
+  font: normal normal 400 1rem/1.25rem arial, sans-serif;
+  height: auto;
+  overflow: initial;
+  position: initial;
+  width: auto;
+  margin: 0;
+}
+.ecl-file-upload:active + .ecl-file-upload__button-container .ecl-file-upload__button, .ecl-file-upload:focus-visible + .ecl-file-upload__button-container .ecl-file-upload__button {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+}
+
+/*
+ * Extra fields for js version
+ */
+.ecl-file-upload__button-container {
+  display: block;
+}
+.no-js .ecl-file-upload__button-container {
+  display: none;
+}
+
+.ecl-file-upload__list {
+  color: #404040;
+  font: normal normal 400 1rem/1.25rem arial, sans-serif;
+  list-style: none;
+  margin-top: 1rem;
+  max-width: 538px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  width: 100%;
+}
+.no-js .ecl-file-upload__list {
+  display: none;
+}
+
+.ecl-file-upload__item {
+  border-top: 1px solid #9f9f9f;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.ecl-file-upload__item .ecl-file-upload__item-name {
+  font-weight: 700;
+}
+.ecl-file-upload__item .ecl-file-upload__item-meta {
+  display: block;
+  padding-top: 0.25rem;
+}
+
+/* 
+ * Standard input styling
+ */
+.ecl-file-upload::-webkit-file-upload-button {
+  -webkit-appearance: none;
+          appearance: none;
+  background: none;
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font: normal normal 400 1rem/1.25rem arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+.ecl-file-upload::-webkit-file-upload-button:hover, .ecl-file-upload::-webkit-file-upload-button:active {
+  box-shadow: none;
+  text-decoration: none;
+}
+.ecl-file-upload::-webkit-file-upload-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+}
+
+.ecl-file-upload::-ms-browse {
+  appearance: none;
+  background: none;
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font: normal normal 400 1rem/1.25rem arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+.ecl-file-upload::-ms-browse:hover, .ecl-file-upload::-ms-browse:active {
+  box-shadow: none;
+  text-decoration: none;
+}
+.ecl-file-upload::-ms-browse:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+}
+
+.ecl-file-upload[disabled] {
+  color: #9f9f9f;
+}
+.ecl-file-upload[disabled]::-webkit-file-upload-button, .ecl-file-upload[disabled]::-webkit-file-upload-button:hover {
+  background-color: #bfd0e4;
+  color: #fff;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+.ecl-file-upload[disabled]::-ms-browse, .ecl-file-upload[disabled]::-ms-browse:hover {
+  background-color: #bfd0e4;
+  color: #fff;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.ecl-file-upload::-ms-value {
+  background-color: #f5f5f5;
+  border-width: 0;
+}
+
+.ecl-file-upload__button-container {
+  margin-top: 0.75rem;
+}

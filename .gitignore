@@ -1,7 +1,8 @@
 node_modules/
 .cache/
 public
-static/
+static/*
 !static/admin/
-!static/images
+static/admin/ecl-webcomponents
+!static/images/
 src/gatsby-types.d.ts

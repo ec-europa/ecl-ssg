@@ -1,0 +1,5 @@
+---
+lang: it
+title: menu
+---
+<ecl-menu theme="ec" slot="menu" style-class="" ecl-script="true" close-label="Close" group="group1" back-label="Back" menu-link="/example" menu-title="Menu"><ecl-menu-item theme="ec" slot="" style-class="" link="/it/home" child="false" has-children="false" trigger-aria-label="Access item's children" current="">Home</ecl-menu-item><ecl-menu-item theme="ec" slot="" style-class="" link="/it/about-us" child="false" has-children="false" trigger-aria-label="Access item's children" current="false">A proposito di noi</ecl-menu-item><ecl-menu-item theme="ec" slot="" style-class="" link="/it/news" child="false" has-children="true" trigger-aria-label="Access item's children" current="">Notizie<ecl-menu-item theme="ec" slot="sublist" style-class="" link="/it/news-1" child="true" has-children="false" trigger-aria-label="Access item's children" current="">Prima notizia</ecl-menu-item></ecl-menu-item><ecl-menu-item style-class="" theme="ec" child="false" link="/it/drupal" has-children="false" trigger-aria-label="Access item's children" current="false" slot="">drupal</ecl-menu-item></ecl-menu>

@@ -1,0 +1,2 @@
+import{r as i,h as t}from"./p-956b13e0.js";const e=class{constructor(t){i(this,t);this.theme="ec";this.styleClass=undefined;this.path=undefined}getClass(){return[`ecl-inpage-navigation__item`,`sc-ecl-inpage-navigation-${this.theme}`,this.styleClass].join(" ")}render(){return t("li",{class:this.getClass()},t("ecl-link",{theme:this.theme,path:this.path,"style-class":`ecl-inpage-navigation__link sc-ecl-inpage-navigation-${this.theme}`,"data-ecl-inpage-navigation-link":true},t("slot",null)))}};export{e as ecl_inpage_navigation_item};
+//# sourceMappingURL=p-f58bda0b.entry.js.map

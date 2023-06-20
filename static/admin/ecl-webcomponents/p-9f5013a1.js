@@ -1,0 +1,2 @@
+import{a as e}from"./p-956b13e0.js";const t=()=>{const t=e=>{const r=window.eclTheme||e.theme||e.getAttribute("theme");if(r){return r}else if(!e.parentElement){return"ec"}else{return t(e.parentElement)}};e((e=>t(e)))};const r=t;export{r as g};
+//# sourceMappingURL=p-9f5013a1.js.map

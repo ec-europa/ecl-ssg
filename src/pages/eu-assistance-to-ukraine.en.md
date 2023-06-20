@@ -1,0 +1,22 @@
+---
+lang: en
+path: en/eu-assistance-to-ukraine
+date: 2023-06-03T11:48:38.525Z
+title: EU assistance to Ukraine
+inpage: true
+contentTop: <p><ecl-text tag="div" theme="ec" is-bold="true" level="5" size="m"
+  item-id="" slot=""><strong>This information is also available
+  in:</strong></ecl-text></p><p><ecl-featured-item style-class="" variant=""
+  image="https://eu-solidarity-ukraine.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-05/Ukrainian%20refugee%20in%20Romania.jpg?itok=9Acw3_Er"
+  id="" item-title="" position="right" media-caption="">On 24 February 2022, the
+  Russian armed forces launched a large-scale invasion of Ukraine. As a result
+  of this unprovoked and unjustified aggression, substantial areas of the
+  Ukrainian territory now constitute areas of war from which many persons are
+  fleeing.The EU stands united in its unwavering support to Ukraine and has
+  stepped up its political, humanitarian, financial and military support to the
+  country. The European Commission is also closely cooperating with Ukraine's
+  neighbouring countries to support them in providing protection for people
+  fleeing the invasion.</ecl-featured-item>&nbsp;<ecl-spacing breakpoint=""
+  direction="b" value="m" outer="true" inner="false">&nbsp;</ecl-spacing></p>
+---
+<ecl-featured-item style-class="" variant="" image="https://eu-solidarity-ukraine.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-11/GettyImages-bought%20photo%201.jpg?itok=vqEcYhII" id="" item-title="School buses for Ukraine: EU solidarity campaign" position="left" media-caption="Kateryna Rodak/Global Images Ukraine via Getty Images">On 20 November, President of the Commission Ursula von der Leyen launched a solidarity campaign to promote and encourage the donation of school buses that are essential for bringing Ukrainian children safely back to their schools. Companies, governments and regional authorities across Europe are invited to contribute. The Commission will cover the cost of transportation of school buses to Ukraine.</ecl-featured-item><p><ecl-text tag="h2" theme="ec" is-bold="true" level="2" size="m" item-id="strong-and-comprehensive-eu-response" slot="">Strong and comprehensive EU response</ecl-text><ecl-text tag="p" theme="ec" is-bold="false" level="2" size="m" slot="">Since the start of Russia's war of aggression, the EU, its Member States and its financial institutions, in a Team Europe approach, are making available €37.8 billion to support Ukraine's overall economic, social and financial resilience. This has been in the form of macro-financial assistance, budget support, emergency assistance, crisis response and humanitarian aid. In addition, military assistance measures are around €15 billion, of which €5.6 billion have been mobilised under the European Peace Facility. This brings the total support made available so far to Ukraine since the beginning of Russia's aggression to around €53 billion. Together with the resources made available to help Member States cater for needs of Ukrainians fleeing the war in the EU, the overall support to Ukraine and Ukrainians amounts to around €70 billion. As part of the commitment made during the College-to-Government meeting and the EU-Ukraine Summit, €1 billion of EU support will be mobilised for Ukraine’s fast recovery. This is to be financed through Neighbourhood, Development and International Cooperation (NDICI) and European Investment Bank (EIB) loans. €37.8 billionmade available by Team Europe Pie chart with 7 slices.&nbsp;&nbsp;<br>View as data table, €37.8 billionmade available by Team Europe</ecl-text><ecl-text tag="h2" theme="ec" is-bold="true" level="2" size="m" item-id="humanitarian-aid-and-civil-protection" slot="">Humanitarian aid and civil protection</ecl-text><ecl-text tag="p" theme="ec" is-bold="false" level="2" size="m" slot="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate pellentesque urna nec commodo. Quisque non molestie erat. Cras condimentum est ut dignissim placerat. Cras tempor sapien nisi, id luctus risus ullamcorper in. Maecenas placerat in justo ut pretium. Duis facilisis, lorem eu rhoncus blandit, est orci pharetra nisl, at consequat tellus odio nec lectus. Morbi et sapien dapibus eros condimentum fermentum. Duis ex lorem, eleifend eu lacus molestie, scelerisque finibus neque</ecl-text></p>

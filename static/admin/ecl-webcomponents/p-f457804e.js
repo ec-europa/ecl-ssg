@@ -1,0 +1,2 @@
+const t=t=>{var e;const a=((e=document.head.querySelector("meta[data-ecl-asset-path]"))===null||e===void 0?void 0:e.dataset.eclAssetPath)||window.__ECL_ASSET_PATH__;if(!a){throw new Error(`Asset path not set yet. \n       Please define a <meta> data-ecl-asset-path in your head or an __ECL_ASSET_PATH__ prop in the window object,\n       the path to the assets will start from the value you set. EX: <meta data-ecl-asset-path="/" />`)}let o=t;if(t.startsWith("./")){o=t.substring(2)}if(!a.endsWith("/")){o="/"+o}return a+o};export{t as g};
+//# sourceMappingURL=p-f457804e.js.map
