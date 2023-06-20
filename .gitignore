@@ -1,5 +1,7 @@
 node_modules/
 .cache/
 public
-static/build
+static/
+!static/admin/
+!static/images
 src/gatsby-types.d.ts
