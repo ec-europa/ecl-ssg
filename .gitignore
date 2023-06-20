@@ -2,7 +2,9 @@ node_modules/
 .cache/
 public
 static/*
+# Include admin/ and images/ folders
 !static/admin/
-static/admin/ecl-webcomponents
 !static/images/
+# Ignore everything inside static/admin/ecl-webcomponents/
+static/admin/ecl-webcomponents/*
 src/gatsby-types.d.ts

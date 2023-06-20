@@ -1,2 +1,0 @@
-import{r as s,h as e}from"./p-94e41b9d.js";const t=class{constructor(e){s(this,e);this.theme="ec";this.styleClass=undefined;this.path=undefined}getClass(){return[`ecl-news-ticker__slide`,this.styleClass].join(" ")}render(){return e("li",{class:this.getClass()},this.path?e("ecl-link",{path:this.path,styleClass:"ecl-news-ticker__slide-text"},e("slot",null)):e("slot",null))}};export{t as ecl_news_ticker_item};
-//# sourceMappingURL=p-9de884d0.entry.js.map
