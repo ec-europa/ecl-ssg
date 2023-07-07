@@ -1180,22 +1180,22 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@ecl/ckeditor5-ecl-webcomponents@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.7.0.tgz#af6b26d4d195872ce70670908200eed4856b17a6"
-  integrity sha512-t1Am+umiLDn8Ob9dD53GlQwhs2YMZnjA6y9ULUSi7scALXL+wFky0KrLi61VX8MiMwj1JSJqIyRgst3x+rIzKA==
+"@ecl/ckeditor5-ecl-webcomponents@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.8.0.tgz#16e9caf96bf14395fc57a8f92b7e00cecb14a29c"
+  integrity sha512-2QwuyGf5Uz1+WqZWOKu5sRmAehCrco3K3Tek3lr1uyLVr1/l78wRBSLGFLIKs3dlsgKf58ej8j/owOD4fDSjaw==
 
-"@ecl/ecl-webcomponents-react@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.7.0.tgz#dd4c82be36fb13c0d8cbed96dba863119be96b58"
-  integrity sha512-hqFNyUgBYQoOLB6hx+Cryzu4FYOprzo5FGY1Z7JxrdsLdJJJ0ewm+dg2G1YPtgTaO7IWiWuYOXz9qLU4qnoYLw==
+"@ecl/ecl-webcomponents-react@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.8.0.tgz#2c086edf97c45c06f5c88aac4cfffceecb6a0b92"
+  integrity sha512-+G8ISDtKgj1gVdhUbRzAqZKg0Ln7fOTk7dcDlhNNIITKuQFdS44plT3Ctnb1k8zHvJMmANfjDNmkXe55MPYRZw==
   dependencies:
-    "@ecl/ecl-webcomponents" "0.7.0"
+    "@ecl/ecl-webcomponents" "0.8.0"
 
-"@ecl/ecl-webcomponents@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.7.0.tgz#15083f08a806a7018aeed86fd2f55e442076ccee"
-  integrity sha512-fHkMGiGY7wXgPAMVIfZl/0jytyJIjgLBpA3Eh9teNCgVThzMFB3rgDRD9N2pXL/xL0Nvzlyf7ZQh4BS2IghLHA==
+"@ecl/ecl-webcomponents@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.8.0.tgz#58d316d5e7c12b750269259110b5856b423f5098"
+  integrity sha512-X3yL7pqxyEJy+WR4HL9YkBFNOScJS7oCOPFn9B+w5ZwZKYNYC3tFr7dhMbK2TAQM1b1tCNkkfModfJHm03sSKQ==
   dependencies:
     "@stencil/core" "4.0.1"
 
