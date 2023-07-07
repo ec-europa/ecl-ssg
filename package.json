@@ -24,9 +24,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ecl/ckeditor5-ecl-webcomponents": "0.6.0",
-    "@ecl/ecl-webcomponents": "0.6.0",
-    "@ecl/ecl-webcomponents-react": "0.6.0",
+    "@ecl/ckeditor5-ecl-webcomponents": "0.7.0",
+    "@ecl/ecl-webcomponents": "0.7.0",
+    "@ecl/ecl-webcomponents-react": "0.7.0",
     "@types/react-html-parser": "2.0.2",
     "gatsby": "5.11.0",
     "gatsby-plugin-babel-exclude": "2.0.0",
