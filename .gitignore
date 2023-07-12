@@ -8,3 +8,6 @@ static/*
 # Ignore everything inside static/admin/ecl-webcomponents/
 static/admin/ecl-webcomponents/*
 src/gatsby-types.d.ts
+
+# Local Netlify folder
+.netlify
