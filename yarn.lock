@@ -1063,6 +1063,11 @@
   resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.6.tgz#697acea6b552167a4dd43ddd4827018aa42e0364"
   integrity sha512-snXIGNiZpqjno3XYQN2lbBB+05hsQR/LSttbtIW1c0gmZ7Kh/DIo0YrxlDxCDulAMFPFM8J+4voLwvYepSj3sw==
 
+"@ecl/ckeditor5-ecl-webcomponents@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.2.0.tgz#ef52ac8fb55d2c81aa433e1243158fbaac6940a2"
+  integrity sha512-TdydimN6tlaSTVCYoE21ngd5it4JscNmKE4SwG7J1a6RBcFIst9WI/oR01lCvDbp1YbYDSdjXHiAWToB3nmF8w==
+
 "@ecl/ecl-webcomponents-react@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.2.0.tgz#96df8d655fa223e6fc505f0fb11ffc160ad36d1b"

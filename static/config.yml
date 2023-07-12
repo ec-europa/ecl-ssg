@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  repo: planctus/ecl-gatsby
-  branch: master
-  base_url: https://ecl-gatsby.netlify.app/
+  repo: ec-europa/ecl-gatsby
+  branch: dev
+  base_url: https://ecl-ssg.netlify.app/
   extension: md
   squash_merges: true
   commit_messages:
