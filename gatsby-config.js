@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `ecl-gatsby`,
-    siteUrl: `https://ecl-gatsby.netlify.app`,
+    title: `ecl-ssg`,
+    siteUrl: `https://ecl-ssg.netlify.app`,
     description: `Starter for gatsby using  ecl-webcomponents`,
-    customTheme: 'ec',
+    customTheme: 'eu',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
