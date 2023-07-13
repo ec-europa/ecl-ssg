@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  repo: ec-europa/ecl-ssg
+  branch: dev
+  base_url: https://ecl-ssg.netlify.app/
+  extension: md
+  squash_merges: true
+  commit_messages:
+    create: 'feat({{collection}}): create {{collection}} “{{slug}}”'
+    update: 'feat({{collection}}): update {{collection}} “{{slug}}”'
+    delete: 'feat({{collection}}): delete {{collection}} “{{slug}}”'
+    uploadMedia: 'Upload “{{path}}”'
+    deleteMedia: 'Delete “{{path}}”'
+i18n:
+  structure: multiple_files
+  locales: [en, fr]
+  default_locale: en
+#local_backend: true
+media_folder: /static/images
+public_folder: /images
+publish_mode: editorial_workflow
+
+collections:
+  - name: home
+    label: Home
+    create: true
+    i18n: true
+    format: frontmatter
+    folder: src/pages/home
+    fields:
+      - { name: lang, label: Language code, default: 'en', i18n: true }
+      - { name: date, label: Date, widget: datetime, i18n: true }
+      - { name: title, label: Title, widget: "hidden", default: "home", i18n: false }
+      - { name: bodyTitle, label: Title, i18n: true}
+      - { name: body, label: Body, widget: ckeditor, i18n: true }
+  - name: page
+    label: Page
+    folder: src/pages
+    format: frontmatter
+    i18n: true
+    create: true
+    fields:
+      - { name: lang, label: Language code, default: 'en', i18n: true  }
+      - { name: path, label: Path, i18n: true, required: false }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title, i18n: true }
+      - { name: inpage, label: With in page navigation, widget: boolean, required: false }
+      - { name: contentTop, label: Content Top, widget: ckeditor, i18n: true, required: false }
+      - { name: body, label: Body, widget: ckeditor, i18n: true }     
+  - name: menu
+    label: Menu
+    folder: src/pages/menu
+    format: frontmatter
+    i18n: true
+    create: true
+    fields:
+      - { name: lang, label: Language code, default: 'en', i18n: true  }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title, i18n: true, hidden: true, default: 'menu' }
+      - { name: body, label: Body, widget: ckeditor, i18n: true }
+  - name: footer
+    label: Footer
+    folder: src/pages/footer
+    format: frontmatter
+    i18n: true
+    create: true
+    fields:
+      - { name: lang, label: Language code, default: 'en', i18n: true  }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title, i18n: true, hidden: true, default: 'footer' }
+      - { name: body, label: Body, widget: ckeditor, i18n: true }
+  - name: site-header
+    label: Site Header
+    folder: src/pages/site-header
+    format: frontmatter
+    i18n: true
+    create: true
+    fields:
+      - { name: lang, label: Language code, default: 'en', i18n: true  }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title, i18n: true, hidden: true, default: 'site-header' }
+      - { name: body, label: Body, widget: ckeditor, i18n: true }

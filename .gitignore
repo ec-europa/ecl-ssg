@@ -1,5 +1,13 @@
 node_modules/
 .cache/
 public
-static/build
+static/*
+# Include admin/ and images/ folders
+!static/admin/
+!static/images/
+# Ignore everything inside static/admin/ecl-webcomponents/
+static/admin/ecl-webcomponents/*
 src/gatsby-types.d.ts
+
+# Local Netlify folder
+.netlify
