@@ -21,12 +21,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-babel-exclude',
-      options: {
-        exclude: require.resolve('../ecl-webcomponents/playground/editor/ckeditor'),
-      },
-    },
-    {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         manualInit: true,
