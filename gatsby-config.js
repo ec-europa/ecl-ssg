@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ecl-gatsby`,
-    siteUrl: `https://ecl-gatsby.netlify.app`,
+    title: `ecl-ssg`,
+    siteUrl: `https://ecl-ssg.netlify.app`,
     description: `Starter for gatsby using  ecl-webcomponents`,
     customTheme: 'ec',
   },
