@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: ec-europa/ecl-ssg
   branch: ec-playground
-  base_url: https://ecl-ssg.netlify.app/
+  base_url: https://ec-playground--ecl-ssg.netlify.app
   extension: md
   squash_merges: true
   commit_messages:
