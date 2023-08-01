@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ecl-gatsby`,
-    siteUrl: `https://ecl-gatsby.netlify.app`,
+    title: `ecl-ssg`,
+    siteUrl: `https://ecl-ssg.netlify.app`,
     description: `Starter for gatsby using  ecl-webcomponents`,
     customTheme: 'ec',
   },
@@ -18,12 +18,6 @@ module.exports = {
         background_color: `#ffffff`,
         display: `standalone`,
         icon: `src/images/icon.png`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-babel-exclude',
-      options: {
-        exclude: require.resolve('../ecl-webcomponents/playground/editor/ckeditor'),
       },
     },
     {

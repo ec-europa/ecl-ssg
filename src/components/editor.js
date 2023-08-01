@@ -1,4 +1,4 @@
-import Editor from "@ecl/ckeditor5-ecl-webcomponents/dist/ckeditor.js";
+import Editor from "@ecl/ckeditor5-ecl-webcomponents/dist/ckeditor";
 import React from "react"
 import { CKEditor } from "@ckeditor/ckeditor5-react"
 
