@@ -8,6 +8,9 @@ const PagePreview = ({ entry, getAsset }) => {
   const contentTop = data.contentTop;
   const iframe = document.querySelector('#preview-pane');
   const iframeHead = iframe.contentDocument.head;
+  const meta = document.createElement('meta');
+  meta.setAttribute('data-ecl-asset-path', '/');
+  iframeHead.appendChild(meta);
   const script = document.createElement('script');
   script.type = 'module';
   script.src = 'ecl-webcomponents/ecl-webcomponents.esm.js';

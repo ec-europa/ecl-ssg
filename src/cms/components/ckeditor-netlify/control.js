@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
-import Editor from "../../../../../ecl-webcomponents/playground/editor/ckeditor";
+import Editor from "@ecl/ckeditor5-ecl-webcomponents/dist/ckeditor.js";
 
 export class Control extends React.Component {
   static propTypes = {
