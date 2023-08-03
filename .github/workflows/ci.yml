@@ -35,7 +35,7 @@ jobs:
   deploy-preview:
     name: deploy full preview
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/ec-playground' && github.ref != 'refs/heads/eu-playground'
+    if: github.ref != 'refs/heads/ec-playground' && github.ref != 'refs/heads/eu-playground'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -57,7 +57,7 @@ jobs:
   deploy-ec:
     name: deploy ec playground
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.ref == 'refs/heads/ec-playground'
+    if: github.ref == 'refs/heads/ec-playground'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -79,7 +79,7 @@ jobs:
   deploy-eu:
     name: deploy eu playground
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.ref == 'refs/heads/eu-playground'
+    if: github.ref == 'refs/heads/eu-playground'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
