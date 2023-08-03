@@ -18,15 +18,16 @@ const Breadcrumb = () => {
   
   const theme = CustomTheme();
   const { title } = data.site.siteMetadata;
+  const languagePrefix = location.pathname.split('/')[1];
   const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
-  const ignoreSegments = Languages(true); // Add the language prefixes to ignore here
+  const ignoreSegments = Languages(true);
 
   const breadcrumbItems = pathSegments
     .filter(segment => !ignoreSegments.includes(segment))
     .map((segment, index, segments) => {
       const isLastItem = index === segments.length - 1;
       const label = isLastItem ? segment.replace(/-/g, ' ') : segment;
-      const path = `/${segments.slice(0, index + 1).join('/')}`;
+      const path = `/${languagePrefix}/${segments.slice(0, index + 1).join('/')}`;
 
       return (
         <ecl-breadcrumb-item

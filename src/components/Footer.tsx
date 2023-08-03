@@ -19,7 +19,7 @@ const Footer = () => {
 		  ) {
 		    nodes {
 		      fields {
-		        lang
+		        langKey
 		      }
 		      html
 		    }
@@ -30,7 +30,7 @@ const Footer = () => {
 
 	if (data.allMarkdownRemark.nodes) {
 		filteredNodes = data.allMarkdownRemark.nodes.filter(
-	  	node => node.fields.lang === language
+	  	node => node.fields.langKey === language
 		);
 	}
 
