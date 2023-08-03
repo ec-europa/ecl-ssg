@@ -76,7 +76,8 @@ module.exports = {
     "gatsby-transformer-remark",
     {
       resolve: 'gatsby-plugin-i18n',
-      options: {        
+      options: {
+        createPages: false,      
         langKeyDefault: 'en',
         useLangKeyLayout: false,
         localizedPaths: {
@@ -85,23 +86,6 @@ module.exports = {
         languageLabels: {
           'en': 'English',
         },
-        markdownRemark: {
-          postPage: 'src/pages/index.tsx',
-          query: `
-          {
-            allMarkdownRemark {
-                edges {
-                node {
-                  fields {
-                  slug,
-                  langKey
-                  }
-                }
-              }
-            }
-          }
-          `
-        }
       }
     }
   ]

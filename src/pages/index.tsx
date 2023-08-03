@@ -3,77 +3,30 @@ import { useLocation } from '@reach/router';
 import { graphql, PageProps } from "gatsby";
 import defineCustomElements from '../components/Utils/define';
 import Layout from "../components/Layout";
-import stripPTag from "../components/Utils/stripP";
-import CustomTheme from "../components/Utils/theme";
-import getLang from "../components/Utils/getLang";
 import BodyContent from "../templates/BodyContent";
-import SocialFollow from "../components/SocialFollow";
-import InPageNavigation from "../components/InPageNavigation";
-import Breadcrumb from "../components/Breadcrumb";
+import getLang from '../components/Utils/getLang';
 
 defineCustomElements();
 
-const Page = ({ data }) => {
-  const theme = CustomTheme();
+const HomePage = ({ data }) => {
   const { pathname } = useLocation();
   const lang = getLang();
-  const path = pathname.split('/')[2] || 'home';
   const nodes = data?.allMarkdownRemark?.nodes || [];
   // Filter the nodes based on the desired language
-  let filteredNodes = nodes.filter(node => node.frontmatter.lang === lang && node.fields.slug.includes(`/${lang}/${path}/`));
+  const filteredNodes = nodes.filter(node => node.fields.langKey === lang && node.frontmatter.contentType === 'home');
 
-  if (filteredNodes.length === 0 && nodes.length > 0) {
-    return <ecl-spinner
-      theme={theme}
-      centered
-      visible
-      overlay
-    >
-      Loading
-    </ecl-spinner>;
+  if (filteredNodes.length === 0) {
+    // Render a loading state or placeholder content
+    return <div>Loading...</div>;
   }
 
-  const inPage = filteredNodes[0].frontmatter.inpage;
   const content = filteredNodes[0];
-  const body = content.rawMarkdownBody;
-  const image = content.frontmatter.image ? content.frontmatter.image.replace('/static', '') : false;
-  const contentTop = content.frontmatter.contentTop || "";
+  const { html } = content;
 
   return (
-    <>
-      <Layout
-        pageHeader={
-          path !== "home" ? (
-            <ecl-page-header 
-              header-title={content.frontmatter.title}
-            >
-              <Breadcrumb theme={theme} />
-            </ecl-page-header>
-          ) : null
-        }
-      >
-        {contentTop && (
-          <BodyContent content={stripPTag(contentTop)} />
-        )}
-        {inPage ? (
-          <>
-          <ecl-grid row>
-            <ecl-grid columns="3" breakpoint="l">
-              <InPageNavigation theme={theme} />
-            </ecl-grid>
-            <ecl-grid columns="9" breakpoint="l">
-              <BodyContent content={stripPTag(body)} />
-            </ecl-grid>
-          </ecl-grid>
-          </>
-        ) : (
-          <BodyContent
-            image={image && <img src={image} alt={content.frontmatter.title} />}
-            content={stripPTag(body)} 
-          />
-        )}
-      </Layout>
-    </>
+    <Layout>
+      <BodyContent content={html} />
+    </Layout>
   );
 };
 
@@ -82,20 +35,17 @@ export const query = graphql`
     allMarkdownRemark {
       nodes {
         fields {
-          slug
+          langKey
         }
         frontmatter {
-          lang
           title
-          inpage
-          contentTop
-          image
+          contentType
         }
-        rawMarkdownBody
+        html
       }
     }
-  }
-`;
+  }`;
 
-export default Page;
+export default HomePage;
+
 export { Head } from "../components/Head"

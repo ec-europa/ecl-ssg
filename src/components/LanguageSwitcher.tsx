@@ -13,7 +13,8 @@ const LanguageSwitcher = () => {
 	const langCodes = Object.keys(languages);
 	const lang = getLang();
 	const { pathname } = useLocation();
-	const path = pathname.split('/')[2] || 'home';
+  const languagePrefix = pathname.split('/')[1];
+	const path = languagePrefix ? pathname.replace(`/${languagePrefix}/`, '/') : 'home';
 	const theme = CustomTheme();
 
 	const handleLanguageChange = (language) => {

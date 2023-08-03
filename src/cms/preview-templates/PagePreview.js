@@ -15,9 +15,6 @@ const PagePreview = ({ entry, getAsset }) => {
   script.type = 'module';
   script.src = 'ecl-webcomponents/ecl-webcomponents.esm.js';
   iframeHead.appendChild(script);
-  const meta = document.createElement('meta');
-  meta.setAttribute('name', 'ecl-asset-path');
-  meta.setAttribute('content', '/');
   iframeHead.appendChild(meta);
 
   if (html) {
