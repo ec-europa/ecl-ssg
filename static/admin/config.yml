@@ -15,7 +15,7 @@ i18n:
   structure: multiple_files
   locales: [en, fr]
   default_locale: en
-#local_backend: true
+local_backend: true
 media_folder: /static/images
 public_folder: /images
 publish_mode: editorial_workflow
@@ -28,8 +28,8 @@ collections:
     format: frontmatter
     folder: src/pages/home
     fields:
-      - { name: lang, label: Language code, default: 'en', i18n: true }
-      - { name: date, label: Date, widget: datetime, i18n: true }
+      - { name: contentType, widget: "hidden", default: 'home' }
+      - { name: customPath, label: Path, i18n: false, default: "home",  required: false }
       - { name: title, label: Title, widget: "hidden", default: "home", i18n: false }
       - { name: bodyTitle, label: Title, i18n: true}
       - { name: body, label: Body, widget: ckeditor, i18n: true }
@@ -40,9 +40,8 @@ collections:
     i18n: true
     create: true
     fields:
-      - { name: lang, label: Language code, default: 'en', i18n: true  }
-      - { name: path, label: Path, i18n: true, required: false }
-      - { name: date, label: Date, widget: datetime }
+      - { name: customPath, label: Path, i18n: true, required: false }
+      - { name: contentType, widget: "hidden", default: 'page' }
       - { name: title, label: Title, i18n: true }
       - { name: inpage, label: With in page navigation, widget: boolean, required: false }
       - { name: contentTop, label: Content Top, widget: ckeditor, i18n: true, required: false }
@@ -54,8 +53,7 @@ collections:
     i18n: true
     create: true
     fields:
-      - { name: lang, label: Language code, default: 'en', i18n: true  }
-      - { name: date, label: Date, widget: datetime }
+      - { name: contentType, widget: "hidden", default: 'menu' }
       - { name: title, label: Title, i18n: true, hidden: true, default: 'menu' }
       - { name: body, label: Body, widget: ckeditor, i18n: true }
   - name: footer
@@ -65,8 +63,7 @@ collections:
     i18n: true
     create: true
     fields:
-      - { name: lang, label: Language code, default: 'en', i18n: true  }
-      - { name: date, label: Date, widget: datetime }
+      - { name: contentType, widget: "hidden", default: 'footer' }
       - { name: title, label: Title, i18n: true, hidden: true, default: 'footer' }
       - { name: body, label: Body, widget: ckeditor, i18n: true }
   - name: site-header
@@ -76,7 +73,6 @@ collections:
     i18n: true
     create: true
     fields:
-      - { name: lang, label: Language code, default: 'en', i18n: true  }
-      - { name: date, label: Date, widget: datetime }
+      - { name: contentType, widget: "hidden", default: 'site-header' }
       - { name: title, label: Title, i18n: true, hidden: true, default: 'site-header' }
       - { name: body, label: Body, widget: ckeditor, i18n: true }

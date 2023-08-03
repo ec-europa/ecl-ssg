@@ -24,7 +24,7 @@ const SiteHeader = () => {
 		  ) {
 		    nodes {
 		      fields {
-		        lang
+		        langKey
 		      }
 		      html
 		    }
@@ -35,7 +35,7 @@ const SiteHeader = () => {
 
 	if (data.allMarkdownRemark.nodes) {
 		filteredNodes = data.allMarkdownRemark.nodes.filter(
-	  	node => node.fields.lang === lang
+	  	node => node.fields.langKey === lang
 		);
 	}
 
