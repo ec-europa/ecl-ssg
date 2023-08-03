@@ -35,7 +35,7 @@ jobs:
   deploy-preview:
     name: deploy full preview
     runs-on: ubuntu-latest
-    if: (github.event_name == 'push' && (github.ref != 'refs/heads/ec-playground' && github.ref != 'refs/heads/eu-playground') || github.event_name == 'pull_request' && github.base_ref != 'ec-playground' && github.base_ref != 'eu-playground'
+    if: (github.event_name == 'push' && (github.ref != 'refs/heads/ec-playground' && github.ref != 'refs/heads/eu-playground')) || (github.event_name == 'pull_request' && github.base_ref != 'ec-playground' && github.base_ref != 'eu-playground')
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
