@@ -54,10 +54,32 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-  deploy-ec:
+  deploy-ec-push:
     name: deploy ec playground
     runs-on: ubuntu-latest
-    if: (github.event_name == 'push' && github.ref == 'refs/heads/ec-playground') || (github.event_name == 'pull_request' && github.base_ref == 'ec-playground')
+    if: github.event_name == 'push' && github.ref == 'refs/heads/ec-playground'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Package application
+        run: yarn build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0.0
+        with:
+          alias: ec-playground-
+          publish-dir: 'public'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-ec-pull-request:
+    name: deploy ec custom preview
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.base_ref == 'ec-playground'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -75,11 +97,33 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-  deploy-eu:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  
+  deploy-eu-push:
     name: deploy eu playground
     runs-on: ubuntu-latest
-    if: (github.event_name == 'push' && github.ref == 'refs/heads/eu-playground') || (github.event_name == 'pull_request' && github.base_ref == 'eu-playground')
+    if: github.event_name == 'push' && github.ref == 'refs/heads/eu-playground'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Package application
+        run: yarn build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0.0
+        with:
+          alias: eu-playground-
+          publish-dir: 'public'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-eu-pull-request:
+    name: deploy eu playground
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.base_ref == 'eu-playground'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
