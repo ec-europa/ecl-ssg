@@ -49,7 +49,7 @@
     You can override these default content using the cms, your content will be used instead of the "mocked" site header and footer.
     This is also true for the menu, which is by default automatically built browsing the existing pages, but this is only to provide you with some default, the menu is not particularly smart so you are invited to create your own menu and adapt it everytime you add or remove a content.
 
-5. **Using the playground environments**
+6. **Using the playground environments**
 
     Two special environments are available to you to try out this tool without cloning the repo and making the needed steps to connect your instance with a CI environment to get the website deployed somewhere.
     These are accessible at:
@@ -62,7 +62,10 @@
     setup of this starter.
     When you save a content a pull request will be generated, if you publish that would be merged in one of the two branches attached to the playground environments, in order not to pollute those, publishing is dicouraged, and if you do it we might then remove the content added if we find it inappropriate.
 
-4.  **Learn more about gatsby**
+7. **Learn more about ECL ssg**
+    - [Documentation](./docs/README.md)
+
+8.  **Learn more about gatsby**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
     - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
