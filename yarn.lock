@@ -1227,24 +1227,24 @@
     gonzales-pe "^4.3.0"
     node-source-walk "^6.0.1"
 
-"@ecl/ckeditor5-ecl-webcomponents@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.9.0.tgz#90db9e0ba991badbd1b6c1460f75338d7de062d1"
-  integrity sha512-cmsZbDN5+BuH3vZ8GP9zHrC+rHjk2KqF/jAuwse4rLDNXT+MDtvYeojenIt8hkRSFNS0tErAUGisaavTYj61NA==
+"@ecl/ckeditor5-ecl-webcomponents@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.10.0.tgz#38508d511fe2d29835efef03c208ae6bdda91830"
+  integrity sha512-oyzqiYI50j/NbD/7ZTS7fR8cMzL52UNGpNMOowgdOzs2a0NHQnwhP5KcZnNAnVlOi6Xr6aD2PNmMlXEW7RaKPA==
 
-"@ecl/ecl-webcomponents-react@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.9.0.tgz#623b9049eb5e0f006dc0ff2d35e35e9d095a7a80"
-  integrity sha512-gl7YFS0EKC3YccdAsL7UTd1JAjbgAbGIKDZrFIr0MammC9FhB896o9eFzTGYUgLm0h8cyf7NlW9c+jqUXY07Ig==
+"@ecl/ecl-webcomponents-react@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.10.0.tgz#b90236b015903aaa14bd30b0d6851d69e62898c8"
+  integrity sha512-RQWxj2xK8bIMhDm/WcDW+tQw2C4ZWIPbX8SsaZsddC1ddSd28pWrX1XQxBGU4rOWU3oDntWriJEHWCRHXNm9lw==
   dependencies:
-    "@ecl/ecl-webcomponents" "0.9.0"
+    "@ecl/ecl-webcomponents" "0.10.0"
 
-"@ecl/ecl-webcomponents@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.9.0.tgz#24450d809964da0ba4f393b2181343ae13d77c86"
-  integrity sha512-hMygBopN7li7aNbHzfSxNLHUwqgDny5t1dM9MGkI3zhiExGDRaZEG/2tqF0t8iRsBLWg1dtX131leX6IMhSatQ==
+"@ecl/ecl-webcomponents@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.10.0.tgz#5d2ede7475dc486fc4aa00b06c50560dd1767fda"
+  integrity sha512-pXyEIVxpMxorJJUc1iPGkS8piOa/eyqIvomcSHe+O06hzXGJmpBdY/no0soRuYRK/grtuTFpyO1OgwMj7uCK0g==
   dependencies:
-    "@stencil/core" "4.0.2"
+    "@stencil/core" "4.0.4"
 
 "@ecl/preset-ec@3.9.1":
   version "3.9.1"
@@ -3635,10 +3635,10 @@
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-"@stencil/core@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.0.2.tgz#2c2ede3c223c66f63456f62bef0d6fad0b5cecd2"
-  integrity sha512-1AnLpHAQDHB+DbM8VpuZikMMmIAtLrkYHMBm+pXKj+EPQqsTcyiZ3a7MAqajdM0WlOXb9rfTZT4aYbPwvItEJw==
+"@stencil/core@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.0.4.tgz#b2393a2caba039a162bdd8cf63589c3bab420629"
+  integrity sha512-eE0BcjEH8JjS0XlgWGiQ0c3uxtJdLvnYRv8rK/WokhGdxht31UMhEM8r+pVHbLPD/y6cSApUfxTl1JVcFFs+Xw==
 
 "@swc/helpers@^0.4.12":
   version "0.4.14"
