@@ -1227,34 +1227,34 @@
     gonzales-pe "^4.3.0"
     node-source-walk "^6.0.1"
 
-"@ecl/ckeditor5-ecl-webcomponents@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.10.0.tgz#38508d511fe2d29835efef03c208ae6bdda91830"
-  integrity sha512-oyzqiYI50j/NbD/7ZTS7fR8cMzL52UNGpNMOowgdOzs2a0NHQnwhP5KcZnNAnVlOi6Xr6aD2PNmMlXEW7RaKPA==
+"@ecl/ckeditor5-ecl-webcomponents@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ckeditor5-ecl-webcomponents/-/ckeditor5-ecl-webcomponents-0.12.0.tgz#d00b5d32a5d426f219222fa5b9f658e6822a73b9"
+  integrity sha512-wEHS9MSVuBf+LKC3QkeSmT6Xu0wEBz8/8CQSEXVZ3OfASl+Yvj/AY24Tr8WbRpDC23aWItO2Od72nbIAG3m22w==
 
-"@ecl/ecl-webcomponents-react@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.10.0.tgz#b90236b015903aaa14bd30b0d6851d69e62898c8"
-  integrity sha512-RQWxj2xK8bIMhDm/WcDW+tQw2C4ZWIPbX8SsaZsddC1ddSd28pWrX1XQxBGU4rOWU3oDntWriJEHWCRHXNm9lw==
+"@ecl/ecl-webcomponents-react@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents-react/-/ecl-webcomponents-react-0.12.0.tgz#2dee0153f42feb6bc8a9f5ba0420c1e0f7736f13"
+  integrity sha512-VJmM9g+mb8AOk9cATFXCGr01uVpcOPDCJgBBBrp7y5TUSh4Uvs7rX6z4GlpZrEJ4+ZVoWWtb06L/ISqFyZDmCA==
   dependencies:
-    "@ecl/ecl-webcomponents" "0.10.0"
+    "@ecl/ecl-webcomponents" "0.12.0"
 
-"@ecl/ecl-webcomponents@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.10.0.tgz#5d2ede7475dc486fc4aa00b06c50560dd1767fda"
-  integrity sha512-pXyEIVxpMxorJJUc1iPGkS8piOa/eyqIvomcSHe+O06hzXGJmpBdY/no0soRuYRK/grtuTFpyO1OgwMj7uCK0g==
+"@ecl/ecl-webcomponents@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ecl-webcomponents/-/ecl-webcomponents-0.12.0.tgz#3479b07d16381a3e4d2d93567b4d3e4e5a470efc"
+  integrity sha512-BsUgX2U1GMLPW9Z0s37tpDohQsQFkiPVz3EtohVjyz+K24kvqb0aCeM7l4vAfIKPtX/Bv0+An3gSzcnKTXrhUA==
   dependencies:
-    "@stencil/core" "4.0.4"
+    "@stencil/core" "4.6.0"
 
-"@ecl/preset-ec@3.9.1":
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/@ecl/preset-ec/-/preset-ec-3.9.1.tgz#72db9b49f5ce9e97aae2b0b90398ca27dbaf8b7f"
-  integrity sha512-4AXgmzfZKpo/0z04S2Hh6STwYPA8RId09Eodem0240D8rxEtVkt/r8dvHCh05FVlzWAR8AGGEbKvnpOvqpUlmw==
+"@ecl/preset-ec@3.11.0":
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/@ecl/preset-ec/-/preset-ec-3.11.0.tgz#b28d6d9cad55a4fe33835dafb63efcc5f8115758"
+  integrity sha512-BeEst6Rr5BTqUrOotkGhfokKZ+CM0B46DaEdmNO9ohpe2uCg0dYhZ7M2VBaK/DLLm8KMJfQr3jHhrnTBfFMbFg==
 
-"@ecl/preset-eu@3.9.1":
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/@ecl/preset-eu/-/preset-eu-3.9.1.tgz#14521425f23a8f58a2e37b529b6604cb83c39fdc"
-  integrity sha512-mMQzD/wz4ROAtFQ/A97WB7FVt8qqQAkNTyPFA8l9s7l3/F+UsdAUBUekdH+9SOsojvvH1/JgVERouQqEqVcclg==
+"@ecl/preset-eu@3.11.0":
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/@ecl/preset-eu/-/preset-eu-3.11.0.tgz#1024db22003afafa1c12b22bd9090e2191f02508"
+  integrity sha512-5O13/W60cidBB1A0wRctq5oL9QXLrE/1I5rmqEm1U2HmupLR5+FEvzeJR8MM6Nho+3GtB1TqI/Mdy2yC6atBjA==
 
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
@@ -3635,10 +3635,10 @@
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-"@stencil/core@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.0.4.tgz#b2393a2caba039a162bdd8cf63589c3bab420629"
-  integrity sha512-eE0BcjEH8JjS0XlgWGiQ0c3uxtJdLvnYRv8rK/WokhGdxht31UMhEM8r+pVHbLPD/y6cSApUfxTl1JVcFFs+Xw==
+"@stencil/core@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.6.0.tgz#a1830b6a9b433f395d5bc905093ca9471bec2228"
+  integrity sha512-5Y6/fP28aspPDRB+Tz5GuB1jRVGuUEk5/rnyE8ACGcuzEOG+zR0A/IHRJSU3XmCxUlVDKfKoO6St5W84oUCVMA==
 
 "@swc/helpers@^0.4.12":
   version "0.4.14"
