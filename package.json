@@ -26,9 +26,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ecl/ckeditor5-ecl-webcomponents": "0.12.0",
-    "@ecl/ecl-webcomponents": "0.12.0",
-    "@ecl/ecl-webcomponents-react": "0.12.0",
+    "@ecl/ckeditor5-ecl-webcomponents": "0.13.0",
+    "@ecl/ecl-webcomponents": "0.13.0",
+    "@ecl/ecl-webcomponents-react": "0.13.0",
     "@types/react-html-parser": "2.0.4",
     "gatsby": "5.12.9",
     "gatsby-plugin-babel-exclude": "2.0.0",
@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-react": "5.1.0",
-    "@ecl/preset-ec": "3.11.0",
-    "@ecl/preset-eu": "3.11.0",
+    "@ecl/preset-ec": "3.13.0",
+    "@ecl/preset-eu": "3.13.0",
     "@types/node": "20.8.10",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
