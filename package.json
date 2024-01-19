@@ -64,7 +64,7 @@
     "netlify-cli": "17.15.1",
     "nopt": "7.2.0",
     "npm-run-all": "4.1.5",
-    "puppeteer": "20.8.0",
+    "puppeteer": "21.7.0",
     "react-i18next": "13.3.1",
     "react-intl": "6.6.1",
     "react-loadable": "5.5.0",
