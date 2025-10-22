@@ -36,202 +36,239 @@ const Footer = () => {
 
 	return (
 		<>
-		   <ecl-footer
+		   <ecl-footer-ec
 		    theme={theme}
 		    logo-alt={t('European Commission')}
 		    logo-title={t('European Commission')}
 		    logo-lang-code={language}
 		    site-name={t('European Commission website')}
 		    variant="standardised"
+		    description={t('This site is managed by:')}
 		    logo-link="/"
 		  >
-		    <ecl-text tag="p"
-		      theme={theme}
-		      slot="description"
-		    >
-		      {t("This site is managed by: [name of the manager of the site]")}
-		    </ecl-text>
-		    <ecl-text
-		      level="5"
-		      is-bold
-		      tag="h2"
-		      slot="ecl-footer-list-main"
-		      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-		    >
-		      {t("Contact us")}
-		    </ecl-text>
-		    <ecl-footer-item
-		      theme={theme}
-		      link={randomizedLink('/example')}
-		      slot="ecl-footer-list-main"
-		    >
-		      {t("Contact information of the DG")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-info"
-		    >
-		      {t("Accessibility")}
-		    </ecl-footer-item>
-		    <ecl-text
-		      level="5"
-		      is-bold
-		      tag="h2"
-		      slot="ecl-footer-list-main-bottom"
-		      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-		    >
-		      {t("Follow us on")}
-		    </ecl-text>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-bottom"
-		    >
-		      Facebook
-		      <ecl-icon
-		        icon="facebook-negative"
-		        slot="icon-before"
-		        sprite="icons-social-media"
-		        size="xs"
-		      ></ecl-icon>
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-bottom"
-		    >
-		      Twitter
-		      <ecl-icon
-		        icon="twitter-negative"
-		        slot="icon-before"
-		        sprite="icons-social-media"
-		        size="xs"
-		      ></ecl-icon>
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-bottom"
-		    >
-		      Linkedin
-		      <ecl-icon
-		        icon="linkedin-negative"
-		        slot="icon-before"
-		        sprite="icons-social-media"
-		        size="xs"
-		      ></ecl-icon>
-		    </ecl-footer-item>
-		    <ecl-text
-		      level="5"
-		      tag="h2"
-		      is-bold
-		      slot="ecl-footer-list-main-right"
-		      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-		    >
-		      {t("About us")}
-		    </ecl-text>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-right"
-		    >
-		     {t("Information about the DG")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-right"
-		    >
-		      {t("Information about the DG")}
-		    </ecl-footer-item>
-		    <ecl-text
-		      level="5"
-		      tag="h2"
-		      is-bold
-		      slot="ecl-footer-list-main-right-bottom"
-		      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-		    >
-		      {t("Related site")}
-		    </ecl-text>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-right-bottom"
-		    >
-		      {t("Related link 1")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-main-right-bottom"
-		    >
-		      {t("Related link 2")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-middle"
-		    >
-		      {t("Class name 1")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-middle"
-		    >
-		      {t("Class name 2")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-center"
-		    >
-		      {t("Contact the European Commission")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-center"
-		    >
-		      {t("Follow the European Commission on social media")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-center"
-		    >
-		      {t("Resources for partners")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-right"
-		    >
-		      {t("Languages on our websites")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-right"
-		    >
-		      {t("Cookies")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-right"
-		    >
-		      {t("Privacy policy")}
-		    </ecl-footer-item>
-		    <ecl-footer-item
-		      link={randomizedLink('/example')}
-		      theme={theme}
-		      slot="ecl-footer-list-bottom-right"
-		    >
-		      {t("Legal notice")}
-		    </ecl-footer-item>
-		  </ecl-footer>
+			  <ecl-social-media-follow
+			      variant="horizontal"
+			      position="left"
+			      style-class={`ecl-site-footer__social-media sc-ecl-footer-${theme}-${theme}`}
+			      slot="ecl-footer-social-follow-info"
+			    >
+			      <ecl-social-media-follow-item
+			        icon="x"
+			        color="inverted"
+			        hide-label
+			        share-path="http://example.html"
+			      >
+			        X
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="instagram"
+			        color="inverted"
+			        hide-label
+			        share-path="http://instagram.com"
+			      >
+			        Instagram
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="linkedin"
+			        color="inverted"
+			        hide-label
+			        share-path="http://linkedin.com"
+			      >
+			        Linkedin
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="telegram"
+			        color="inverted"
+			        hide-label
+			        share-path="http://telegram.com"
+			      >
+			        Telegram
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="chain"
+			        color="inverted"
+			        hide-label
+			        share-path="http://example.html"
+			      >
+			        Other
+			      </ecl-social-media-follow-item>
+			    </ecl-social-media-follow>
+			    <ecl-text
+			      size="m"
+			      weight="bold"
+			      tag="div"
+			      slot="ecl-footer-list-contact"
+			      style-class="ecl-site-footer__title"
+			    >
+			      {t('Contact us')}
+			    </ecl-text>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-contact"
+			    >
+			      {t('Contact information of the DG')}
+			    </ecl-footer-item>
+			    <ecl-text
+			      size="m"
+			      weight="bold"
+			      tag="div"
+			      slot="ecl-footer-list-about"
+			      style-class="ecl-site-footer__title"
+			    >
+			      {t('About us')}
+			    </ecl-text>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-about"
+			    >
+			      {t('Information about the DG')}
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-about"
+			    >
+			      {t('Information about the DG')}
+			    </ecl-footer-item>
+			    <ecl-text
+			      size="m"
+			      weight="bold"
+			      tag="div"
+			      slot="ecl-footer-list-more"
+			      style-class="ecl-site-footer__title"
+			    >
+			      {t('More information on')}
+			    </ecl-text>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-more"
+			    >
+			      Class name 1
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-more"
+			    >
+			      Class name 2
+			    </ecl-footer-item>
+			    <ecl-text
+			      size="m"
+			      weight="bold"
+			      tag="div"
+			      slot="ecl-footer-list-related"
+			      style-class="ecl-site-footer__title"
+			    >
+			      Related links
+			    </ecl-text>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-related"
+			    >
+			      Related link 1
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-related"
+			    >
+			      Related link 2
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-related"
+			    >
+			      Related link 3
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-related"
+			    >
+			      Related link 4
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-related"
+			    >
+			      Related link 5
+			    </ecl-footer-item>
+			    <ecl-social-media-follow
+			      variant="horizontal"
+			      description={t('Follow the European Commission')}
+			      position="left"
+			      style-class={`ecl-site-footer__social-media sc-ecl-footer-${theme}-${theme}`}
+			      inline-title={t('Follow us')}
+			      slot="ecl-footer-social-follow"
+			    >
+			      <ecl-social-media-follow-item
+			        icon="x"
+			        color="inverted"
+			        hide-label
+			        share-path="http://example.html"
+			      >
+			        X
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="instagram"
+			        color="inverted"
+			        hide-label
+			        share-path="http://instagram.com"
+			      >
+			        Instagram
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="linkedin"
+			        color="inverted"
+			        hide-label
+			        share-path="http://linkedin.com"
+			      >
+			        Linkedin
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="telegram"
+			        color="inverted"
+			        hide-label
+			        share-path="http://telegram.com"
+			      >
+			        Telegram
+			      </ecl-social-media-follow-item>
+			      <ecl-social-media-follow-item
+			        icon="chain"
+			        color="inverted"
+			        hide-label
+			        share-path="http://example.html"
+			      >
+			        {t('Other')}
+			      </ecl-social-media-follow-item>
+			    </ecl-social-media-follow>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-bottom-left"
+			    >
+			      {t('Languages on our websites')}
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-bottom-left"
+			    >
+			      {t('Cookies')}
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-bottom-left"
+			    >
+			      {t('Privacy policy')}
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-bottom-left"
+			    >
+			      {t('Legal notice')}
+			    </ecl-footer-item>
+			    <ecl-footer-item
+			      link={randomizedLink('/example.html')}
+			      slot="ecl-footer-list-bottom-left"
+			    >
+			      {t('Accessibility')}s
+			    </ecl-footer-item>
+			  </ecl-footer-ec>
 	</>
 	);
 }
