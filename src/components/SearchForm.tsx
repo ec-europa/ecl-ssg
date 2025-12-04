@@ -22,7 +22,6 @@ const SearchForm: React.FC = () => {
     <EclSearchForm
       id="ecl-site-header-search-form"
       onSubmit={handleSearch}
-      theme={theme}
       input-id="ecl-search-form"
       width="m"
       placeholder={t('Placeholder text')}

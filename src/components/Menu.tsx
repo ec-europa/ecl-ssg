@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import CustomTheme from './Utils/theme';
 import ReactHtmlParser from 'react-html-parser';
 import stripPTag from './Utils/stripP';
 import getLang from './Utils/getLang';
@@ -9,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 const Menu = () => {
   const { t } = useTranslation();
   const language = getLang();
-  const theme = CustomTheme();
   const data = useStaticQuery(graphql`
     query {
       menuItems: allMarkdownRemark(
@@ -70,7 +68,6 @@ const Menu = () => {
       ) : (
         <ecl-menu
           slot="menu"
-          theme={theme}
           close-label={t('Close')}
           back-label={t('Back')}
           menu-link="/example"
@@ -82,7 +79,6 @@ const Menu = () => {
               link={`/${language}/${
                 page.fields.customPath || page.fields.slug.replace(`/${language}/`, '').slice(0, -1)
               }/`}
-              theme={theme}
               key={`menu-item-${index}`}
             >
               {page.frontmatter.title}

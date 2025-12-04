@@ -1,5 +1,5 @@
 import * as React from "react";
-import CustomTheme from "./Utils/theme" 
+import CustomTheme from "./Utils/theme";
 
 export const Head: React.FC = () => {
   const theme = CustomTheme();

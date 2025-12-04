@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { useLocation } from '@reach/router';
 import { useTranslation } from 'react-i18next';
 
-import CustomTheme from './Utils/theme';
 import getLang from './Utils/getLang';
 import Languages from './Languages';
 
@@ -15,7 +14,6 @@ const LanguageSwitcher = () => {
 	const { pathname } = useLocation();
   const languagePrefix = pathname.split('/')[1];
 	const path = languagePrefix ? pathname.replace(`/${languagePrefix}/`, '/') : 'home';
-	const theme = CustomTheme();
 
 	const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
@@ -25,7 +23,6 @@ const LanguageSwitcher = () => {
     <>
       {langCodes.map((language, index) => (
         <ecl-language-item
-        	theme={theme}
         	slot="eu-category"
         	path={`/${language}/${path}`}
         	lang-code={language}

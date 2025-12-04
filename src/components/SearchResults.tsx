@@ -22,14 +22,14 @@ const SearchResults: React.FC<SearchResultsProps> = ({ searchQuery, searchResult
   return (
     <>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
-      <ecl-text level="1">Search Results</ecl-text>
+      <ecl-text tag="h1">Search Results</ecl-text>
       <ecl-spacing value="m" direction="b"></ecl-spacing>
       <ecl-text>Search Query: {searchQuery}</ecl-text>
       <ul>
         {searchResults.map((result) => (
           <li key={result.slug}>
             <Link to={result.slug}> 
-              <ecl-text level="3" bold> {highlightSearchQuery(result.title)}</ecl-text>
+              <ecl-text tag="h3" weight="bold"> {highlightSearchQuery(result.title)}</ecl-text>
             </Link>
             {highlightSearchQuery(result.content)}
           </li>
