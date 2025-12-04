@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
-import CustomTheme from './Utils/theme';
 import Languages from './Languages';
 
 const Breadcrumb = () => {
@@ -33,7 +32,6 @@ const Breadcrumb = () => {
         <ecl-breadcrumb-item
           key={index}
           path={isLastItem ? null : path}
-          theme={theme}
           current-page={isLastItem ? 'true' : null}
         >
           {label}
@@ -42,8 +40,8 @@ const Breadcrumb = () => {
     });
 
   return (
-    <ecl-breadcrumb slot="breadcrumb" variant={theme === 'ec' ? 'breadcrumbVariant' : 'default'} theme={theme} ecl-script>
-      <ecl-breadcrumb-item path="/" theme={theme}>
+    <ecl-breadcrumb slot="breadcrumb" ecl-script>
+      <ecl-breadcrumb-item path="/">
         {title}
       </ecl-breadcrumb-item>
       {breadcrumbItems}

@@ -1,44 +1,36 @@
 import React from "react";
-import CustomTheme from "./Utils/theme";
 
 const SocialFollow = () => {
-	const theme = CustomTheme();
 	return (
 		<ecl-social-media-follow
 		  variant="horizontal"
-		  theme={theme}
 		  description="Follow the latest progress and get involved."
 		>
 		  <ecl-social-media-follow-item
-		    theme={theme}
 		    icon="facebook-color"
 		    share-path="http://facebook.com"
 		  >
 		    Facebook
 		  </ecl-social-media-follow-item>
 		  <ecl-social-media-follow-item
-		    theme={theme}
 		    icon="twitter-color"
 		    share-path="http://twitter.com"
 		  >
 		    Twitter
 		  </ecl-social-media-follow-item>
 		  <ecl-social-media-follow-item
-		    theme={theme}
 		    icon="instagram-color"
 		    share-path="http://instagram.com"
 		  >
 		    Instagram
 		  </ecl-social-media-follow-item>
 		  <ecl-social-media-follow-item
-		    theme={theme}
 		    icon="linkedin-color"
 		    share-path="http://linkedin.com"
 		  >
 		    Linkedin
 		  </ecl-social-media-follow-item>
 		  <ecl-social-media-follow-item
-		    theme={theme}
 		    icon="telegram-color"
 		    share-path="http://telegram.com"
 		  >
@@ -46,7 +38,6 @@ const SocialFollow = () => {
 		  </ecl-social-media-follow-item>
 		  <ecl-popover
 		    ecl-script
-		    theme={theme}
 		    toggle-label="Other social networks"
 		    list
 		    icon="share"
@@ -54,7 +45,6 @@ const SocialFollow = () => {
 		    item-id="popover-example"
 		  >
 		    <ecl-popover-item
-					theme={theme}
 		      path="/example"
 		      icon="pinterest-color"
 		      icon-sprite="icons-social-media"
@@ -63,7 +53,6 @@ const SocialFollow = () => {
 		      Pinterest
 		    </ecl-popover-item>
 		    <ecl-popover-item
-		      theme={theme}
 		      path="/example"
 		      icon="mastodon-color"
 		      icon-sprite="icons-social-media"
@@ -72,7 +61,6 @@ const SocialFollow = () => {
 		      Mastodon
 		    </ecl-popover-item>
 		    <ecl-popover-item
-		      theme={theme}
 		      path="/example"
 		      icon="reddit-color"
 		      icon-sprite="icons-social-media"
@@ -81,7 +69,6 @@ const SocialFollow = () => {
 		      Reddit
 		    </ecl-popover-item>
 		    <ecl-popover-item
-		      theme={theme}
 		      path="/example"
 		      icon="youtube-color"
 		      icon-sprite="icons-social-media"
@@ -90,7 +77,6 @@ const SocialFollow = () => {
 		      Youtube
 		    </ecl-popover-item>
 		    <ecl-popover-item
-		      theme={theme}
 		      path="/example"
 		      icon="flickr-color"
 		      icon-sprite="icons-social-media"
@@ -99,7 +85,6 @@ const SocialFollow = () => {
 		      Flickr
 		    </ecl-popover-item>
 		    <ecl-popover-item
-		      theme={theme}
 		      path="/example"
 		      icon="skype-color"
 		      icon-sprite="icons-social-media"
