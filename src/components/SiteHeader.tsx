@@ -46,7 +46,6 @@ const SiteHeader = () => {
 	    ) : (
       <ecl-site-header
         ecl-script
-        theme={theme}
         language-block
         search-block="false"
         language={languages[lang]}
@@ -64,9 +63,7 @@ const SiteHeader = () => {
         <LanguageSwitcher />
         <Menu />
       	<div slot="search" className={`ecl-site-header__search-container sc-ecl-search-form-${theme}`}>
-      		<Search
-      			theme={theme} 
-      	/>
+      		<Search />
       	</div>
       </ecl-site-header>
 	  )}

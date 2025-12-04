@@ -24,7 +24,6 @@ const InPageNavigation = forwardRef((props, ref) => {
       {...props}
       ref={ref}
       inpage-title={t('Page contents')}
-      theme={theme}
       ecl-script
       inpage-id={Math.random().toString(36).substring(2)}
     >
