@@ -8,4 +8,5 @@ CMS.registerPreviewTemplate('page', PagePreview);
 CMS.registerPreviewTemplate('news', PagePreview);
 CMS.registerPreviewTemplate('menu', PagePreview);
 CMS.registerPreviewTemplate('footer', PagePreview);
+
 CMS.init();

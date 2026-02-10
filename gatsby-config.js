@@ -71,8 +71,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     "gatsby-transformer-remark",
     {
       resolve: 'gatsby-plugin-i18n',
