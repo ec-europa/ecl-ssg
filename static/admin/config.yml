@@ -16,8 +16,7 @@ backend:
 i18n:
   structure: multiple_files
   locales: [en, fr]
-  default_locale: en
-local_backend: true
+  #local_backend: true
 media_folder: /static/images
 public_folder: /images
 publish_mode: editorial_workflow
