@@ -77,7 +77,14 @@ export class Control extends React.Component {
               style.textContent = `
                 :root {
                   --ck-toolbar-dropdown-max-width: 42vw;
-              }`
+                }
+                .ck-editor__editable_inline {
+                  min-height: 200px;
+                }
+                .ck-balloon-panel_visible {
+                  max-height: calc(100vh - 20px);
+                  overflow-y: auto;
+                }`;
 
               iframeDoc.head.appendChild(style);
 
