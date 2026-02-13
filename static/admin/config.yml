@@ -1,3 +1,5 @@
+cms:
+  css: /ckeditor5.css
 backend:
   name: git-gateway
   repo: ec-europa/ecl-ssg
@@ -15,7 +17,7 @@ i18n:
   structure: multiple_files
   locales: [en, fr]
   default_locale: en
-#local_backend: true
+local_backend: true
 media_folder: /static/images
 public_folder: /images
 publish_mode: editorial_workflow
