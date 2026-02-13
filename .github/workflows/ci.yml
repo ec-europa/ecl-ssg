@@ -32,6 +32,31 @@ jobs:
           node-version: '22.12.0'
       - name: Test
         run: ./scripts/audit.sh
+  deploy-master:
+    name: deploy production
+    runs-on: ubuntu-latest
+    if: (github.ref == 'refs/heads/master')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.12.0'
+      - name: Install pnpm
+        run: npm install -g pnpm@10.9.0
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Package application
+        run: pnpm build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0.0
+        with:
+          production-deploy: true
+          publish-dir: 'public'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-ec-push:
   deploy-preview:
     name: deploy full preview
     runs-on: ubuntu-latest
