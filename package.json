@@ -44,17 +44,18 @@
     "netlify-cms-proxy-server": "1.3.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-html-parser": "2.0.2"
+    "react-html-parser": "2.0.2",
+    "sharp": "^0.34.5"
   },
   "packageManager": "pnpm@10.9.0",
   "devDependencies": {
-    "ckeditor5": "47.4.0",
     "@ckeditor/ckeditor5-react": "11.0.1",
     "@ecl/preset-ec": "5.0.0-alpha.22.3",
     "@ecl/preset-eu": "5.0.0-alpha.22.3",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "ckeditor5": "47.4.0",
     "create-react-class": "15.7.0",
     "fast-glob": "3.3.3",
     "fs-extra": "11.3.3",
