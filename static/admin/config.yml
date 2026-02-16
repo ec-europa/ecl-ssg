@@ -3,7 +3,7 @@ cms:
 backend:
   name: git-gateway
   repo: ec-europa/ecl-ssg
-  branch: master
+  branch: dev
   base_url: https://ecl-ssg.netlify.app/
   extension: md
   squash_merges: true
