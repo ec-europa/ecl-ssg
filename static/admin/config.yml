@@ -43,6 +43,7 @@ collections:
     fields:
       - { name: customPath, label: Path, i18n: true, required: false }
       - { name: contentType, widget: "hidden", default: 'page' }
+      - { name: showPageHeader, widget: boolean, default: true },
       - { name: title, label: Title, i18n: true }
       - { name: inpage, label: With in page navigation, widget: boolean, required: false }
       - { name: contentTop, label: Content Top, widget: ckeditor, i18n: true, required: false }

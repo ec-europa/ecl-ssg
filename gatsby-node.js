@@ -10,6 +10,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       contentTop: String
       customPath: String
       contentType: String
+      showPageHeader: Boolean
     }
 
     type MarkdownRemark implements Node {
@@ -58,6 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
             rawMarkdownBody
             frontmatter {
               contentTop
+              showPageHeader
             }
             fields {
               slug
@@ -97,6 +99,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: pagePath,
         langKey: node.fields.langKey,
+        showPageHeader: node.frontmatter.showPageHeader ?? true,
       },
     });
   });
