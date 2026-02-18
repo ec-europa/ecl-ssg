@@ -1,9 +1,12 @@
 import React from "react";
 import gatsbyConfig from "./gatsby-config";
 
-export const onRenderBody = ({ setPreBodyComponents }) => {
-  const theme = gatsbyConfig.siteMetadata?.customTheme || "ec";
+const theme = gatsbyConfig.siteMetadata?.customTheme || "ec";
 
+// SSR: ECL expects a function
+global.CustomTheme = () => theme;
+
+export const onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents([
     <script
       key="ecl-theme-init"
@@ -12,8 +15,10 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
           (function () {
             try {
               var theme = localStorage.getItem('ecl-theme') || '${theme}';
+              window.CustomTheme = function () { return theme; };
               document.documentElement.setAttribute('data-ecl-theme', theme);
             } catch (e) {
+              window.CustomTheme = function () { return '${theme}'; };
               document.documentElement.setAttribute('data-ecl-theme', '${theme}');
             }
           })();
