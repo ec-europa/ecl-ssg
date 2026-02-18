@@ -29,7 +29,6 @@ collections:
     i18n: true
     format: frontmatter
     folder: src/pages/home
-    slug: "{{fields.customPath}}"
     fields:
       - { name: contentType, widget: "hidden", default: 'home' }
       - { name: customPath, label: Path, i18n: false, default: "home",  required: false }
@@ -40,12 +39,12 @@ collections:
     label: Page
     folder: src/pages
     format: frontmatter
-    slug: "{{fields.customPath}}"
     i18n: true
     create: true
     fields:
       - { name: customPath, label: Path, i18n: true, required: false }
       - { name: contentType, widget: "hidden", default: 'page' }
+      - { name: showPageHeader, widget: boolean, default: true },
       - { name: title, label: Title, i18n: true }
       - { name: inpage, label: With in page navigation, widget: boolean, required: false }
       - { name: contentTop, label: Content Top, widget: ckeditor, i18n: true, required: false }

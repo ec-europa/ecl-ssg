@@ -43,13 +43,14 @@ const Page = ({ data }) => {
   const content = filteredNodes[0];
   const body = content.rawMarkdownBody;
   const image = content.frontmatter.image ? content.frontmatter.image.replace('/static', '') : false;
+  const showPageHeader = content.frontmatter.showPageHeader ?? true;
   const contentTop = content.frontmatter.contentTop || "";
 
   return (
     <>
       <Layout
         pageHeader={
-          path !== "home" ? (
+          showPageHeader && path !== "home" ? (
             <ecl-page-header 
               header-title={content.frontmatter.title}
             >
@@ -99,6 +100,7 @@ export default () => (
               inpage
               contentTop
               image
+              showPageHeader
             }
             rawMarkdownBody
           }
