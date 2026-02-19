@@ -28,9 +28,9 @@
     "update-deps": "npm-check-updates -i"
   },
   "dependencies": {
-    "@ecl/ckeditor5-ecl-webcomponents": "0.21.0",
-    "@ecl/ecl-webcomponents": "0.21.0",
-    "@ecl/ecl-webcomponents-react": "0.21.0",
+    "@ecl/ckeditor5-ecl-webcomponents": "0.22.0",
+    "@ecl/ecl-webcomponents": "0.22.0",
+    "@ecl/ecl-webcomponents-react": "0.22.0",
     "@types/react-html-parser": "2.0.7",
     "gatsby": "5.16.1",
     "gatsby-plugin-babel-exclude": "2.0.0",

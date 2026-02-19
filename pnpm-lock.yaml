@@ -15,14 +15,14 @@ importers:
   .:
     dependencies:
       '@ecl/ckeditor5-ecl-webcomponents':
-        specifier: 0.21.0
-        version: 0.21.0(ckeditor5@47.4.0)
+        specifier: 0.22.0
+        version: 0.22.0(ckeditor5@47.4.0)
       '@ecl/ecl-webcomponents':
-        specifier: 0.21.0
-        version: 0.21.0
+        specifier: 0.22.0
+        version: 0.22.0
       '@ecl/ecl-webcomponents-react':
-        specifier: 0.21.0
-        version: 0.21.0
+        specifier: 0.22.0
+        version: 0.22.0
       '@types/react-html-parser':
         specifier: 2.0.7
         version: 2.0.7
@@ -1105,8 +1105,8 @@ packages:
   '@ecl/checkbox@5.0.0-alpha.22.3':
     resolution: {integrity: sha512-d4iOsoExQUdYRN8Ogro1Ai+sZB3B771V3eIGtj+v9HH57uiuCCGJUVDADP0CHlwRmKNMgVHHseHl30DocvSxvw==}
 
-  '@ecl/ckeditor5-ecl-webcomponents@0.21.0':
-    resolution: {integrity: sha512-EnsQqvAsnc3aU/3QOPPjqcmJnu+sNVht9R9PtGR9nvysO9TQryBlW47omM2Luc0JE2T212TZWasdbdRXhuEV3w==}
+  '@ecl/ckeditor5-ecl-webcomponents@0.22.0':
+    resolution: {integrity: sha512-NZ4BMbDXVG5fKPJfBvOyZeUjd/xths3itJA5uNfcXLL1YVXeKz3AgDNZV4wGDH9DH7HIFfXsnX/nelcusSjNuQ==}
     peerDependencies:
       ckeditor5: 47.5.0
 
@@ -1131,11 +1131,11 @@ packages:
   '@ecl/dom-utils@5.0.0-alpha.22.3':
     resolution: {integrity: sha512-t2jQ7qT5JUYMGhZilGu/pTFK8Ikqqrb0zlpIZyH8bey6QhWlkVNJYLfS5DQlMp9DwX2yBaQNghvMcHURq9Rt+Q==}
 
-  '@ecl/ecl-webcomponents-react@0.21.0':
-    resolution: {integrity: sha512-8ncztKRVxy7/PpFZ/Mqznh6tF2mznm45gzi8ghEMZlNd6u+THtrMgRDBbbzwhc17bDuD3P6W05+7fenGllrm1A==}
+  '@ecl/ecl-webcomponents-react@0.22.0':
+    resolution: {integrity: sha512-/yNYJZ1IDQ/pCIiQMHm9TnYITRtCgdQtOmKMCmj6yRRZeeiaCuRovMqK51P/mCHThe8sPO25RBGrxzCcCoVMRg==}
 
-  '@ecl/ecl-webcomponents@0.21.0':
-    resolution: {integrity: sha512-CyY5PodXS4d1UnDRwBUqdEFI4KCGym4mOieio54NbCUGNYYQrZ2ucVaYQYUHOAyWwVWdf1yC8xHdIh2O4rpzuA==}
+  '@ecl/ecl-webcomponents@0.22.0':
+    resolution: {integrity: sha512-OKc7Vu6rakQwYqB96WrUGOK3J2oB+YrsLan9pXgrilSrBvDsTPKo+BLB8hjC0qgGyzENdy4PlTYH43SI45QfoQ==}
     engines: {node: '>=20.0.0', pnpm: 10.9.0}
 
   '@ecl/event-manager@5.0.0-alpha.22.3':
@@ -3036,8 +3036,8 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
 
-  '@stencil/core@4.41.3':
-    resolution: {integrity: sha512-zQ/7/hwsJBKYz0CzN3LyKJ3JdnNTdsYMY+futdyodTLkPNlPeRWVF1EI5syaBb09W+ay/T+TsYbPMXbXgG/3qQ==}
+  '@stencil/core@4.43.0':
+    resolution: {integrity: sha512-6Uj2Z3lzLuufYAE7asZ6NLKgSwsB9uxl84Eh34PASnUjfj32GkrP4DtKK7fNeh1WFGGyffsTDka3gwtl+4reUg==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
@@ -10944,6 +10944,7 @@ packages:
   tar@7.5.7:
     resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   teeny-tap@0.2.0:
     resolution: {integrity: sha512-HnA3I2sxRQe/SZgQTQgQvvA17DhfzhBJ1LfSOXZ5VUTbxGLvnAqUef84ZGNNSEbk1ZMEIDeghTHZagJ7LifAgg==}
@@ -14027,8 +14028,6 @@ snapshots:
       '@ckeditor/ckeditor5-engine': 47.4.0
       '@ckeditor/ckeditor5-utils': 47.4.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-widget@47.4.0':
     dependencies:
@@ -14158,7 +14157,7 @@ snapshots:
     dependencies:
       '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/ckeditor5-ecl-webcomponents@0.21.0(ckeditor5@47.4.0)':
+  '@ecl/ckeditor5-ecl-webcomponents@0.22.0(ckeditor5@47.4.0)':
     dependencies:
       ckeditor5: 47.4.0
 
@@ -14191,13 +14190,13 @@ snapshots:
 
   '@ecl/dom-utils@5.0.0-alpha.22.3': {}
 
-  '@ecl/ecl-webcomponents-react@0.21.0':
+  '@ecl/ecl-webcomponents-react@0.22.0':
     dependencies:
-      '@ecl/ecl-webcomponents': 0.21.0
+      '@ecl/ecl-webcomponents': 0.22.0
 
-  '@ecl/ecl-webcomponents@0.21.0':
+  '@ecl/ecl-webcomponents@0.22.0':
     dependencies:
-      '@stencil/core': 4.41.3
+      '@stencil/core': 4.43.0
 
   '@ecl/event-manager@5.0.0-alpha.22.3': {}
 
@@ -16698,7 +16697,7 @@ snapshots:
       strip-ansi: 6.0.1
       webpack: 5.98.0
 
-  '@stencil/core@4.41.3':
+  '@stencil/core@4.43.0':
     optionalDependencies:
       '@rollup/rollup-darwin-arm64': 4.34.9
       '@rollup/rollup-darwin-x64': 4.34.9
