@@ -104,3 +104,10 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(
+    '/admin/editor',
+    require('express').static('static/admin/editor')
+  );
+};

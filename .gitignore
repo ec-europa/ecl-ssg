@@ -8,6 +8,7 @@ static/*
 # Ignore everything inside static/admin/ecl-webcomponents/
 static/admin/ecl-webcomponents/*
 static/admin/*.css
+static/admin/editor/*
 src/gatsby-types.d.ts
 
 # Local Netlify folder
