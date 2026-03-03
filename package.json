@@ -29,9 +29,9 @@
     "update-deps": "npm-check-updates -i"
   },
   "dependencies": {
-    "@ecl/ckeditor5-ecl-webcomponents": "0.23.0",
-    "@ecl/ecl-webcomponents": "0.23.0",
-    "@ecl/ecl-webcomponents-react": "0.23.0",
+    "@ecl/ckeditor5-ecl-webcomponents": "0.23.1",
+    "@ecl/ecl-webcomponents": "0.23.1",
+    "@ecl/ecl-webcomponents-react": "0.23.1",
     "@ecl/wc-puck-editor": "0.0.2",
     "@types/react-html-parser": "2.0.7",
     "gatsby": "5.16.1",
