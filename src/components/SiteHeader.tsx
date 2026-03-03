@@ -14,6 +14,7 @@ import Menu from './Menu';
 
 const SiteHeader = () => {
 	const languages = Languages();
+	console.log(languages);
 	const { t } = useTranslation();
   const lang = getLang();
   const theme = CustomTheme();
@@ -45,17 +46,15 @@ const SiteHeader = () => {
 	      <>{ReactHtmlParser(stripPTag(filteredNodes[0].html))}</>
 	    ) : (
       <ecl-site-header
-        ecl-script
         language-block
         search-block="false"
-        language={languages[lang]}
+        language={lang}
         lang-code={lang}
-        login-text={t('Log in')}
         eu-label={t('Official EU languages:')}
         language-title={t('Choose your language')}
-        login-link="/example"
         language-id="language-switcher"
         logo-alt={t('European Commission')}
+        logo-size="l"
         logo-title={t('European commission')}
         language-aria-label={t('Choose language')}
         site-name={t('ECL ssg playground')}

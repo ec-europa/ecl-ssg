@@ -12,29 +12,27 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, pageHeader }) => {
+const Layout: React.FC<LayoutProps> = ({ children, pageHeader, row = false }) => {
   const lang = getLang();
 
   return (
     <I18nextProvider i18n={i18n}>
       <SiteHeader />
-      {pageHeader && (
-        <>
-          {pageHeader}
-          <main>
-            <ecl-grid container="true">
+
+      {pageHeader}
+
+      <main>
+        <ecl-grid container="true">
+          {row ? (
+            <ecl-grid row="true">
               {children}
             </ecl-grid>
-          </main>
-        </>
-      )}
-      {!pageHeader && (
-        <main>
-          <ecl-grid container="true">
-            <ecl-grid row="true">{children}</ecl-grid>
-          </ecl-grid>
-        </main>
-      )}
+          ) : (
+            children
+          )}
+        </ecl-grid>
+      </main>
+
       <Footer />
     </I18nextProvider>
   );

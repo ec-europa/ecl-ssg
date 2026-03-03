@@ -6,7 +6,10 @@ const theme = gatsbyConfig.siteMetadata?.customTheme || "ec";
 // SSR: ECL expects a function
 global.CustomTheme = () => theme;
 
-export const onRenderBody = ({ setPreBodyComponents }) => {
+export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
+  setHeadComponents([
+    <meta key="ecl-asset-path" data-ecl-asset-path="/" />,
+  ]),
   setPreBodyComponents([
     <script
       key="ecl-theme-init"
